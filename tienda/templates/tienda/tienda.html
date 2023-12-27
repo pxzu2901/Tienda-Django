@@ -4,8 +4,13 @@
 
 {% block content %}
 
+
 <div class="container">
+  <div style="float:right;">
+  <p style="color: white;">Texto texteando</p>
+  </div>
   <div class="row">
+    
 
     {% for producto in productos %}
       <div class="col-md-3"> <!-- Ajusta el tamaño de la columna según tus necesidades -->
@@ -15,6 +20,8 @@
             <h5 class="card-title">{{producto.nombre}}</h5>
             <p class="card-text">{{producto.precio}}&nbsp;$</p>
           </div>
+          <div class="card-footer text-center"></div>
+            <a href="#" class="btn btn-success">Agregar al carro</a>
         </div>
       </div>
     {% endfor %}
