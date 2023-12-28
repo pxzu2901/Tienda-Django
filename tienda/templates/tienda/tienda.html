@@ -7,7 +7,8 @@
 
 <div class="container">
   <div style="float:right;">
-  <p style="color: white;">Texto texteando</p>
+    {% include "carro/widget.html" %}
+
   </div>
   <div class="row">
     
@@ -21,7 +22,7 @@
             <p class="card-text">{{producto.precio}}&nbsp;$</p>
           </div>
           <div class="card-footer text-center"></div>
-            <a href="#" class="btn btn-success">Agregar al carro</a>
+            <a href="{% url 'carro:agregar' producto.id %}" class="btn btn-success">Agregar al carro</a>
         </div>
       </div>
     {% endfor %}
