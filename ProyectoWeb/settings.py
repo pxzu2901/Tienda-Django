@@ -47,7 +47,10 @@ INSTALLED_APPS = [
     'contacto',
     'tienda',
     'carro',
-]
+    'autenticacion',
+    'crispy_forms',
+    'crispy_bootstrap4',
+]   
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -142,3 +145,7 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'aandress2901@gmail.com'
 EMAIL_HOST_PASSWORD = 'laji tqqp udha xihc'
+
+CRISPY_ALLOWED_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
