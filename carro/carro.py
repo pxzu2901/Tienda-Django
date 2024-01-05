@@ -1,11 +1,11 @@
 class Carro:
     def __init__(self, request) -> None:
-        self.reques=request
+        '''self.reques=request
         self.session=request.session
         carro=self.session.get("carro")
         if not carro:
             carro=self.session["carro"]={}
-        #else:
+        #else:'''
         self.carro=carro
 
     def agregar(self, producto):
